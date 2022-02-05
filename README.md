@@ -21,65 +21,10 @@ Progettare ed implementare una struttura dati che, **dato un file di coppie chia
 
 Dotare il programma di un menu da cui sia possibile richiamare le suddette operazioni.
 
+> Traccia 2
 
-```cpp
-enum Color
-{
-    BLACK,
-    RED
-};
+# Servizio Mobilità
 
-class Node
-{
-private:
-    int key;
-    int id;
-    string val;
-    Node *parent, *left, *right;
-    Color color;
-    Node *next;
-    Node *head;
+Il primo ministro dello stato di Grapha-Nui vuole incentivare l’utilizzo del servizio pubblico di mobilità. A tal fine promuove un **abbonamento mensile** da usare su un** unico percorso** dalla città capitale fino ad una qualunque città dello stato, con la possibilità di ottenere uno sconto pari al costo della tratta più onerosa del percorso scelto. Si vuole progettare un algoritmo che, data una città dello stato ed una piantina con tutte le tratte ed i relativi costi, aiuti i cittadini a scegliere il percorso più economico considerando lo sconto pari alla tratta più costosa.
 
-public:
-    Node() : parent(nullptr), left(nullptr), right(nullptr), head(NULL), color(RED){};
-    ~Node()
-    {
-        if (left != nullptr)
-            delete left;
-        if (right != nullptr)
-            delete right;
-    }
 
-    int getKey() { return key; }
-    void setKey(int keyy) { key = keyy; }
-    int getId() { return id; }
-    void setId(int ident) { id = ident; }
-    void setVal(string v) { val = v; }
-    string getVal() { return val; }
-    void setParent(Node *p) { parent = p; }
-    Node *getParent() { return parent; }
-    void setLeft(Node *l) { left = l; }
-    Node *getLeft() { return left; }
-    void setRight(Node *r) { right = r; }
-    Node *getRight() { return right; }
-    void setColor(Color c) { color = c; }
-    Color getColor() { return color; }
-    void setNext(Node *n) { next = n; }
-    Node *getNext() { return next; }
-    Node *getHead() { return head; }
-    void setHead(Node *n) { head = n; }
-    bool search(Node *nodo); // O(n)
-    // Function che inserisce
-    // il nodo alla fine della
-    // linked list.
-    void insertNode(int, string); // O(1)
-
-    // Function che stampa la
-    // linked list.
-    void printList(); // O(n)
-
-    // Function che elimina il
-    // nodo in una det. posizione.
-    void deleteNode(Node *nodo); // O(n)
-};
-```
