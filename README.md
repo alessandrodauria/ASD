@@ -1,6 +1,7 @@
 # ASD
 ## Progetto di algoritmi e strutture dati
 > Traccia 1
+
 Seguendo i principi di progettazione object oriented, progettare ed implementare in C++, in maniera ORIGINALE, tutti gli algoritmi e le strutture dati necessari per risolvere i seguenti punti:
 
 # HashRBTree
@@ -13,11 +14,72 @@ Si vuole realizzare la struttura dati **HashRBTree** che consenta di memorizzare
 Progettare ed implementare una struttura dati che, **dato un file di coppie chiave valore separate da virgola**, costruisca HashRBTree corrispondente e consenta di effettuare le seguenti operazioni:
 
 ```
-git status
 1. **SEARCH**(< key,value >),
 2. **INSERT**(< key,value >), 
 3. **DELETE**(< key,value >).
-git commit
 ```
 
 Dotare il programma di un menu da cui sia possibile richiamare le suddette operazioni.
+
+
+```cpp
+enum Color
+{
+    BLACK,
+    RED
+};
+
+class Node
+{
+private:
+    int key;
+    int id;
+    string val;
+    Node *parent, *left, *right;
+    Color color;
+    Node *next;
+    Node *head;
+
+public:
+    Node() : parent(nullptr), left(nullptr), right(nullptr), head(NULL), color(RED){};
+    ~Node()
+    {
+        if (left != nullptr)
+            delete left;
+        if (right != nullptr)
+            delete right;
+    }
+
+    int getKey() { return key; }
+    void setKey(int keyy) { key = keyy; }
+    int getId() { return id; }
+    void setId(int ident) { id = ident; }
+    void setVal(string v) { val = v; }
+    string getVal() { return val; }
+    void setParent(Node *p) { parent = p; }
+    Node *getParent() { return parent; }
+    void setLeft(Node *l) { left = l; }
+    Node *getLeft() { return left; }
+    void setRight(Node *r) { right = r; }
+    Node *getRight() { return right; }
+    void setColor(Color c) { color = c; }
+    Color getColor() { return color; }
+    void setNext(Node *n) { next = n; }
+    Node *getNext() { return next; }
+    Node *getHead() { return head; }
+    void setHead(Node *n) { head = n; }
+    bool search(Node *nodo); // O(n)
+    // Function che inserisce
+    // il nodo alla fine della
+    // linked list.
+    void insertNode(int, string); // O(1)
+
+    // Function che stampa la
+    // linked list.
+    void printList(); // O(n)
+
+    // Function che elimina il
+    // nodo in una det. posizione.
+    void deleteNode(Node *nodo); // O(n)
+};
+```
