@@ -32,5 +32,24 @@ Il primo ministro dello stato di Grapha-Nui vuole incentivare l’utilizzo del s
 ```
 È assegnato un file di testo contenente nel primo rigo due interi separati da uno spazio: 
 il numero N delle città (numerate da 1 ad N, 0 rappresenta la capitale), il numero P delle tratte.
-I successivi P righi contengono ciascuno tre numeri S, E, C, per indicare la città di partenza, quella di arrivo e il costo.
+I successivi P righi contengono ciascuno tre numeri S, E, C, per indicare la città di partenza,
+quella di arrivo e il costo.
+```
+
+## Dati di output:
+
+```
+Determinare il percorso più economico dalla città 0 alla città N, indicando quali attraversare 
+e quale è il costo finale (dopo aver detratto lo sconto).
+```
+## Dati di output:
+
+
+```
+• 2≤N≤1000
+• 1≤P≤10000
+• 0≤ Si ≤ N
+• 0≤ Ei ≤ N
+• 1 ≤ Ci ≤ 10000
+perognii=1...P perognii=1...P per ogni i=1...P
 ```
