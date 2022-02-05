@@ -4,7 +4,7 @@
 
 Seguendo i principi di progettazione object oriented, progettare ed implementare in C++, in maniera ORIGINALE, tutti gli algoritmi e le strutture dati necessari per risolvere i seguenti punti:
 
-# HashRBTree
+# HashRBTree :deciduous_tree:
 
 Si vuole realizzare la struttura dati **HashRBTree** che consenta di memorizzare coppie **<key,value>** all’interno di un albero Red Black.
 1. A partire dalla chiave **key**, utilizzando una funzione di hash, si ricava un **id** che verrà utilizzato per indentificare un nodo dell’albero al cui interno viene memorizzato il dato value.
@@ -21,9 +21,19 @@ Progettare ed implementare una struttura dati che, **dato un file di coppie chia
 
 Dotare il programma di un menu da cui sia possibile richiamare le suddette operazioni.
 
+
+
+
+
+
+
+
+
+
+
 > Traccia 2
 
-# Servizio Mobilità
+# Servizio Mobilità :running_man:
 
 Il primo ministro dello stato di Grapha-Nui vuole incentivare l’utilizzo del servizio pubblico di mobilità. A tal fine promuove un **abbonamento mensile** da usare su un** unico percorso** dalla città capitale fino ad una qualunque città dello stato, con la possibilità di ottenere uno sconto pari al costo della tratta più onerosa del percorso scelto. Si vuole progettare un algoritmo che, data una città dello stato ed una piantina con tutte le tratte ed i relativi costi, aiuti i cittadini a scegliere il percorso più economico considerando lo sconto pari alla tratta più costosa.
 
