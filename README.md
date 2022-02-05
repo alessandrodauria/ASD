@@ -42,14 +42,17 @@ quella di arrivo e il costo.
 Determinare il percorso più economico dalla città 0 alla città N, indicando quali attraversare 
 e quale è il costo finale (dopo aver detratto lo sconto).
 ```
-## Dati di output:
+## Assunzioni:
 
 
 ```
 • 2≤N≤1000
 • 1≤P≤10000
-• 0≤ Si ≤ N
-• 0≤ Ei ≤ N
-• 1 ≤ Ci ≤ 10000
-perognii=1...P perognii=1...P per ogni i=1...P
+• 0≤ Si ≤ N         Per ogni i=1...P
+• 0≤ Ei ≤ N         Per ogni i=1...P
+• 1 ≤ Ci ≤ 10000    Per ogni i=1...P
 ```
+
+## Esempio:
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+
