@@ -54,5 +54,5 @@ e quale è il costo finale (dopo aver detratto lo sconto).
 ```
 
 ## Esempio:
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![This is an image](https://drive.google.com/file/d/1P8oP0unz7NtyGrCDA0JagkqEoToa0R_G/view?usp=sharing)
 
